@@ -1,6 +1,8 @@
 let resultComputer = "";
-
 let resultPerson = "";
+
+let scoreComputer = 0;
+let scoreHuman = 0;
 
 function getComputerChoice() {
     let computerNumber = Math.floor(Math.random() * 3 + 1);

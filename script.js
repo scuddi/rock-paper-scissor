@@ -1,8 +1,14 @@
+//Initializing the choice of the computer and the player.
+
 let resultComputer = "";
 let resultPerson = "";
 
+//Initializing score of computer and player.
+
 let scoreComputer = 0;
 let scoreHuman = 0;
+
+// Function to generate a random number that represents a random choice between Rock, Paper and Scissor
 
 function getComputerChoice() {
     let computerNumber = Math.floor(Math.random() * 3 + 1);
@@ -19,6 +25,8 @@ function getComputerChoice() {
         return resultComputer
     }
 }
+
+// Function that asks the user for an input.
 
 function getHumanChoice() {
     resultPerson = prompt("Are you playing Rock, Paper or Scissor?");

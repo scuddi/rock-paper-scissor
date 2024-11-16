@@ -12,17 +12,18 @@ let scoreHuman = 0;
 
 function getComputerChoice() {
     let computerNumber = Math.floor(Math.random() * 3 + 1);
-    console.log(computerNumber);
 
     if (computerNumber === 1) {
         resultComputer = "rock"
-        console.log("The computer chose Rock.")
-        return resultComputer
+        console.log(`The computer chose ${resultComputer}`);
+        return resultComputer;
     } else if (computerNumber === 2) {
-        resultComputer = "The computer chose Paper."
+        resultComputer = "paper";
+        console.log(`The computer chose ${resultComputer}`);
         return resultComputer
     } else {
-        resultComputer = "The computer chose Scissor."
+        resultComputer = "scissor";
+        console.log(`The computer chose ${resultComputer}`)
         return resultComputer
     }
 }
@@ -34,11 +35,11 @@ function getHumanChoice() {
     resultPerson = resultPerson.toLowerCase();
 
     if (resultPerson === "rock") {
-        return console.log("You chose Rock.")
+        return console.log(`You chose ${resultPerson}`)
     } else if (resultPerson === "paper") {
-        return console.log("You chose Paper.")
+        return console.log(`You chose ${resultPerson}`)
     } else if (resultPerson === "scissor") {
-        return console.log("You chose Scissor.")
+        return console.log(`You chose ${resultPerson}`)
     } else {
         return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
     }

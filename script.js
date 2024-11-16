@@ -43,6 +43,22 @@ function getHumanChoice() {
     }
 }
 
+// Function to play one round.
+
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === "rock") {
+        if (computerChoice === "scissor") {
+            console.log("You win. " + humanChoice + " beats ")
+            return console.log
+        }
+    } 
+}
+
+// const humanSelection = getHumanChoice();
+// const computerSelection = getComputerChoice();
+
+// playRound(humanSelection, computerSelection);
+
 getComputerChoice();
 getHumanChoice();
 console.log(resultComputer);

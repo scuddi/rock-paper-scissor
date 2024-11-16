@@ -15,7 +15,8 @@ function getComputerChoice() {
     console.log(computerNumber);
 
     if (computerNumber === 1) {
-        resultComputer = "The computer chose Rock."
+        resultComputer = "rock"
+        console.log("The computer chose Rock.")
         return resultComputer
     } else if (computerNumber === 2) {
         resultComputer = "The computer chose Paper."
@@ -60,11 +61,30 @@ function playRound(humanChoice, computerChoice) {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
         }
     } else if (humanChoice === "scissor") {
-        if (computerChoice ===
-            
-        ) {
-
+        if (computerChoice === "paper") {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman++;
+            return scoreHuman
+        } else if (computerChoice === "rock") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer++;
+            return scoreComputer
         }
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
+        }
+    } else {
+        if (computerChoice === "rock") {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman++;
+            return scoreHuman
+        } else if (computerChoice === "scissor") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer++;
+            return scoreComputer
+        }
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
     }
 }
 

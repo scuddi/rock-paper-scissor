@@ -48,10 +48,24 @@ function getHumanChoice() {
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock") {
         if (computerChoice === "scissor") {
-            console.log(`You win! ${humanChoice} beats scissor.`)
-            return console.log
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman++;
+            return scoreHuman
+        } else if (computerChoice === "paper") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer++;
+            return scoreComputer
         }
-    } 
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
+        }
+    } else if (humanChoice === "scissor") {
+        if (computerChoice ===
+            
+        ) {
+
+        }
+    }
 }
 
 // const humanSelection = getHumanChoice();

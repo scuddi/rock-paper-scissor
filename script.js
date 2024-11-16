@@ -39,20 +39,20 @@ function getHumanChoice() {
     } else if (resultPerson === "scissor") {
         return console.log("You chose Scissor.")
     } else {
-        return console.log(resultPerson + " is not a possible choice. Choose Rock, Paper or Scissor please.")
+        return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
     }
 }
 
 // Function to play one round.
 
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice === "rock") {
-        if (computerChoice === "scissor") {
-            console.log("You win. " + humanChoice + " beats ")
-            return console.log
-        }
-    } 
-}
+// // // // function playRound(humanChoice, computerChoice) {
+// // // //     if (humanChoice === "rock") {
+// // // //         if (computerChoice === "scissor") {
+// // // //             console.log("You win. " + humanChoice + " beats ")
+// // // //             return console.log
+// // // //         }
+// // // //     } 
+// // // // }
 
 // const humanSelection = getHumanChoice();
 // const computerSelection = getComputerChoice();

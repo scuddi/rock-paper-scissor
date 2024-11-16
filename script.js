@@ -35,11 +35,14 @@ function getHumanChoice() {
     resultPerson = resultPerson.toLowerCase();
 
     if (resultPerson === "rock") {
-        return console.log(`You chose ${resultPerson}`)
+        console.log(`You chose ${resultPerson}`)
+        return resultPerson
     } else if (resultPerson === "paper") {
-        return console.log(`You chose ${resultPerson}`)
+        console.log(`You chose ${resultPerson}`)
+        return resultPerson
     } else if (resultPerson === "scissor") {
-        return console.log(`You chose ${resultPerson}`)
+        console.log(`You chose ${resultPerson}`)
+        return resultPerson
     } else {
         return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
     }
@@ -86,14 +89,16 @@ function playRound(humanChoice, computerChoice) {
         }
         else {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
-    }
-}
+        };
+    };
+    console.log(`Score of human: ${scoreHuman}; Score of computer: ${scoreComputer}`)
+};
 
-// const humanSelection = getHumanChoice();
-// const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
-// playRound(humanSelection, computerSelection);
+playRound(humanSelection, computerSelection);
 
-getComputerChoice();
-getHumanChoice();
-console.log(resultComputer);
+// getComputerChoice();
+// getHumanChoice();
+// console.log(resultComputer);

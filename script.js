@@ -54,11 +54,11 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock") {
         if (computerChoice === "scissor") {
             console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman++;
+            scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "paper") {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer++;
+            scoreComputer = scoreComputer + 1;
             return scoreComputer
         }
         else {
@@ -67,11 +67,11 @@ function playRound(humanChoice, computerChoice) {
     } else if (humanChoice === "scissor") {
         if (computerChoice === "paper") {
             console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman++;
+            scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "rock") {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer++;
+            scoreComputer = scoreComputer + 1;
             return scoreComputer
         }
         else {
@@ -80,21 +80,22 @@ function playRound(humanChoice, computerChoice) {
     } else {
         if (computerChoice === "rock") {
             console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman++;
+            scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "scissor") {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer++;
+            scoreComputer = scoreComputer + 1;
             return scoreComputer
         }
         else {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
         };
     };
-    console.log(`Score of human: ${scoreHuman}; Score of computer: ${scoreComputer}`)
 };
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+console.log(`Score of human: ${scoreHuman}; Score of computer: ${scoreComputer}`)

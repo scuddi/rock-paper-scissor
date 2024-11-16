@@ -98,7 +98,3 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
-
-// getComputerChoice();
-// getHumanChoice();
-// console.log(resultComputer);

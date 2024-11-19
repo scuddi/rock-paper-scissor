@@ -5,7 +5,7 @@ GUI will be written for the script. At the moment it is just a coding project to
 
 <h2> Test it out! </h2>
 
-Here is the live preview of the site. 
+Here is the live preview of the site: https://scuddi.github.io/rock-paper-scissor/
 If you are on it press CTRL + Shift + C to open the developer tools of your browser. Switch to console there to see the ouput of the game.
 
 Now you can just enter "rock", "paper" or "scissor" (Case sensitiveness shouldn't matter, just check for the right spelling) and you should

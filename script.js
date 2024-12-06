@@ -30,9 +30,7 @@ function getComputerChoice() {
 
 // Function that asks the user for an input.
 
-function getHumanChoice() {
-    resultPerson = prompt("Are you playing Rock, Paper or Scissor?");
-    resultPerson = resultPerson.toLowerCase();
+function getHumanChoice(resultPerson) {
 
     if (resultPerson === "rock") {
         console.log(`You chose ${resultPerson}`)
@@ -47,6 +45,56 @@ function getHumanChoice() {
         return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
     }
 }
+
+function playRound(humanChoice) {
+    const computerChoice = getComputerChoice();
+
+    if (humanChoice === "rock") {
+        if (computerChoice === "scissor") {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman + 1;
+            return scoreHuman
+        } else if (computerChoice === "paper") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer + 1;
+            return scoreComputer
+        }
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
+        }
+    } else if (humanChoice === "scissor") {
+        if (computerChoice === "paper") {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman + 1;
+            return scoreHuman
+        } else if (computerChoice === "rock") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer + 1;
+            return scoreComputer
+        }
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
+        }
+    } else {
+        if (computerChoice === "rock") {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            scoreHuman = scoreHuman + 1;
+            return scoreHuman
+        } else if (computerChoice === "scissor") {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            scoreComputer = scoreComputer + 1;
+            return scoreComputer
+        }
+        else {
+            return console.log(`It is a draw. Both chose ${humanChoice}.`)
+        };
+    };
+};
+
+//const humanSelection = getHumanChoice();
+//const computerSelection = getComputerChoice();
+
+//playRound(humanSelection, computerSelection);
 
 // Function to play 5 Rounds
 
@@ -105,52 +153,5 @@ function getHumanChoice() {
     //     console.log(`Score of human: ${scoreHuman}; Score of computer: ${scoreComputer}`);
     // };
 // };
-
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice === "rock") {
-        if (computerChoice === "scissor") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman + 1;
-            return scoreHuman
-        } else if (computerChoice === "paper") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer + 1;
-            return scoreComputer
-        }
-        else {
-            return console.log(`It is a draw. Both chose ${humanChoice}.`)
-        }
-    } else if (humanChoice === "scissor") {
-        if (computerChoice === "paper") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman + 1;
-            return scoreHuman
-        } else if (computerChoice === "rock") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer + 1;
-            return scoreComputer
-        }
-        else {
-            return console.log(`It is a draw. Both chose ${humanChoice}.`)
-        }
-    } else {
-        if (computerChoice === "rock") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
-            scoreHuman = scoreHuman + 1;
-            return scoreHuman
-        } else if (computerChoice === "scissor") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
-            scoreComputer = scoreComputer + 1;
-            return scoreComputer
-        }
-        else {
-            return console.log(`It is a draw. Both chose ${humanChoice}.`)
-        };
-    };
-};
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-playRound(humanSelection, computerSelection);
 
 //playGame();

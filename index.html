@@ -7,9 +7,10 @@
 </head>
 <body>
     <h1>Welcome to my little game of rock, paper, scissors!</h1>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <p>What are you picking?</p>
+    <button class="button" id="rock" value="rock" onclick="playRound('rock');getHumanChoice('rock')">Rock</button>
+    <button class="button" id="paper" value="paper" onclick="playRound('paper');getHumanChoice('paper')">Paper</button>
+    <button class="button" id="scissors" value="scissors" onclick="playRound('scissors');getHumanChoice('scissors')">Scissors</button>
     <script src="script.js"></script>
 </body>
 </html>

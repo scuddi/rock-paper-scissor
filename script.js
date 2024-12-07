@@ -25,8 +25,8 @@ function getComputerChoice() {
         resultComputer = "scissor";
         console.log(`The computer chose ${resultComputer}`)
         return resultComputer
-    }
-}
+    };
+};
 
 // Function that asks the user for an input.
 
@@ -43,8 +43,8 @@ function getHumanChoice(resultPerson) {
         return resultPerson
     } else {
         return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
-    }
-}
+    };
+};
 
 function playRound(humanChoice) {
     const computerChoice = getComputerChoice();
@@ -58,10 +58,9 @@ function playRound(humanChoice) {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
-        }
-        else {
+        } else {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
-        }
+        };
     } else if (humanChoice === "scissor") {
         if (computerChoice === "paper") {
             console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
@@ -71,8 +70,7 @@ function playRound(humanChoice) {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
-        }
-        else {
+        } else {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
         }
     } else {
@@ -84,8 +82,7 @@ function playRound(humanChoice) {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
-        }
-        else {
+        } else {
             return console.log(`It is a draw. Both chose ${humanChoice}.`)
         };
     };

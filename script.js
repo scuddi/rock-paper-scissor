@@ -30,24 +30,9 @@ function getComputerChoice() {
 
 // Function that asks the user for an input.
 
-function getHumanChoice(resultPerson) {
-
-    if (resultPerson === "rock") {
-        console.log(`You chose ${resultPerson}`)
-        return resultPerson
-    } else if (resultPerson === "paper") {
-        console.log(`You chose ${resultPerson}`)
-        return resultPerson
-    } else if (resultPerson === "scissor") {
-        console.log(`You chose ${resultPerson}`)
-        return resultPerson
-    } else {
-        return console.log(`${resultPerson} is not a possible choice. Choose Rock, Paper or Scissor please.`)
-    };
-};
-
 function playRound(humanChoice) {
     const computerChoice = getComputerChoice();
+    console.log(`You chose ${humanChoice}.`)
 
     if (humanChoice === "rock") {
         if (computerChoice === "scissor") {

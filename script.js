@@ -36,11 +36,11 @@ function playRound(humanChoice) {
 
     if (humanChoice === "rock") {
         if (computerChoice === "scissor") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "paper") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            console.log(`You lose, ${computerChoice} beats ${humanChoice}!`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
         } else {
@@ -48,11 +48,11 @@ function playRound(humanChoice) {
         };
     } else if (humanChoice === "scissor") {
         if (computerChoice === "paper") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "rock") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            console.log(`You lose, ${computerChoice} beats ${humanChoice}!`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
         } else {
@@ -60,11 +60,11 @@ function playRound(humanChoice) {
         }
     } else {
         if (computerChoice === "rock") {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+            console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             scoreHuman = scoreHuman + 1;
             return scoreHuman
         } else if (computerChoice === "scissor") {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+            console.log(`You lose, ${computerChoice} beats ${humanChoice}!`);
             scoreComputer = scoreComputer + 1;
             return scoreComputer
         } else {

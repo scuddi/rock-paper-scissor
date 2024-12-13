@@ -9,17 +9,19 @@
 </head>
 <body>
     <h1>Welcome to my little game of rock, paper, scissors!</h1>
-    <p>What are you picking?</p>
-    <div class="buttons">
-        <button class="button" id="rock" value="rock" onclick="playGame('rock')">Rock</button>
-        <button class="button" id="paper" value="paper" onclick="playGame('paper')">Paper</button>
-        <button class="button" id="scissors" value="scissors" onclick="playGame('scissors')">Scissors</button>
-    </div>
-    <div class="scores">
-        <div class="winner">The round winner will be displayed here.</div>
-        <div class="hl-scores">The Scores</div>
-        <div class="showScoreComputer">Score Computer: 0</div>
-        <div class="showScoreHuman">Your Score: 0</div>
+    <div class="content">
+        <h2>What are you picking?</h2>
+        <div class="buttons">
+            <button class="button" id="rock" value="rock" onclick="playGame('rock')" type="button">Rock</button>
+            <button class="button" id="paper" value="paper" onclick="playGame('paper')" type="button">Paper</button>
+            <button class="button" id="scissors" value="scissors" onclick="playGame('scissors')" type="button">Scissors</button>
+        </div>
+        <div class="scores">
+            <div class="winner">The round winner will be displayed here.</div>
+            <div class="hl-scores">The Scores</div>
+            <div class="showScoreComputer">Score Computer: 0</div>
+            <div class="showScoreHuman">Your Score: 0</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

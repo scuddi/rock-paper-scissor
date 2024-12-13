@@ -25,13 +25,26 @@ h1 {padding-bottom: 20px;}
 }
 
 .buttons {
+    display: flex;
+    justify-content: space-around;
     padding-bottom: 20px;
 }
 
 .button {
     background-color: #09191F;
     font-size: 18px;
-    /*padding: 3px 10px;*/
+    width: 125px;
+    margin: 5px;
+    padding: 6px 5px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #b2c1c6;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: #0d2a34;
+    border-color: antiquewhite;
 }
 
 .hl-scores {

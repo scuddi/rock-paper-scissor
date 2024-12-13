@@ -43,15 +43,21 @@ h1 {padding-bottom: 20px;}
 }
 
 .button:hover {
-    background-color: #0d2a34;
+    background-color: #123743;
     border-color: antiquewhite;
+}
+
+.winner {
+    padding-bottom: 20px;
+    font-weight: 700;
 }
 
 .hl-scores {
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.winner {
-    padding-bottom: 10px;
-    font-weight: 700;
+.scores-display {
+    display: flex;
 }

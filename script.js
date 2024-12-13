@@ -45,13 +45,13 @@ function playRound(humanChoice) {
             console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             winner.textContent = `You win, ${humanChoice} beats ${computerChoice}!`;
             scoreHuman = scoreHuman + 1;
-            showScoreHuman.textContent = `Your Score: ${scoreHuman}`;
+            showScoreHuman.textContent = scoreHuman;
             return scoreHuman
         } else if (computerChoice === "paper") {
             console.log(`You lose, ${computerChoice} beat ${humanChoice}!`);
             winner.textContent = (`You lose, ${computerChoice} beats ${humanChoice}!`);
             scoreComputer = scoreComputer + 1;
-            showScoreComputer.textContent = `Score Computer: ${scoreComputer}`;
+            showScoreComputer.textContent = scoreComputer;
             return scoreComputer
         } else {
             winner.textContent = `It is a draw. Both chose ${humanChoice}.`;
@@ -62,13 +62,13 @@ function playRound(humanChoice) {
             console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             winner.textContent = `You win, ${humanChoice} beat ${computerChoice}!`;
             scoreHuman = scoreHuman + 1;
-            showScoreHuman.textContent = `Your Score: ${scoreHuman}`;
+            showScoreHuman.textContent = scoreHuman;
             return scoreHuman
         } else if (computerChoice === "rock") {
             console.log(`You lose, ${computerChoice} beats ${humanChoice}!`);
             winner.textContent = `You lose, ${computerChoice} beats ${humanChoice}!`;
             scoreComputer = scoreComputer + 1;
-            showScoreComputer.textContent = `Score Computer: ${scoreComputer}`;
+            showScoreComputer.textContent = scoreComputer;
             return scoreComputer
         } else {
             winner.textContent = `It is a draw. Both chose ${humanChoice}.`;
@@ -79,13 +79,13 @@ function playRound(humanChoice) {
             console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
             winner.textContent = `You win, ${humanChoice} beats ${computerChoice}!`;
             scoreHuman = scoreHuman + 1;
-            showScoreHuman.textContent = `Your Score: ${scoreHuman}`;
+            showScoreHuman.textContent = scoreHuman;
             return scoreHuman
         } else if (computerChoice === "scissors") {
             console.log(`You lose, ${computerChoice} beat ${humanChoice}!`);
             winner.textContent = `You lose, ${computerChoice} beats ${humanChoice}!`;
             scoreComputer = scoreComputer + 1;
-            showScoreComputer.textContent = `Score Computer: ${scoreComputer}`;
+            showScoreComputer.textContent = scoreComputer;
             return scoreComputer
         } else {
             winner.textContent = `It is a draw. Both chose ${humanChoice}.`;
@@ -108,11 +108,11 @@ function endGame() {
     if (scoreComputer === 4) {
         scoreComputer = scoreComputer + 1;
         winner.textContent = "The computer won the game :( If you want to play again, please refresh the site.";
-        showScoreComputer.textContent = `Score Computer: ${scoreComputer}`;
+        showScoreComputer.textContent = scoreComputer;
     } else {
         scoreHuman = scoreHuman + 1
         winner.textContent = "You won! :) If you want to play again, please refresh the site";
-        showScoreHuman.textContent = `Your Score: ${scoreHuman}`;
+        showScoreHuman.textContent = scoreHuman;
     };
 };
 

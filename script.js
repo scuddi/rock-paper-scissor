@@ -94,24 +94,25 @@ function playRound(humanChoice) {
     };
 };
 
+//End game function
 
+function playGame(humanChoice) {
+    if (scoreComputer === 4 || scoreHuman === 4) {
+        endGame(scoreComputer);
+    } else {
+        playRound(humanChoice);
+    };
+};
 
-// Function to play 5 Rounds
+function endGame() {
+    if (scoreComputer === 4) {
+        scoreComputer = scoreComputer + 1;
+        winner.textContent = "The computer won the game :( If you want to play again, please refresh the site.";
+        showScoreComputer.textContent = `Score Computer: ${scoreComputer}`;
+    } else {
+        scoreHuman = scoreHuman + 1
+        winner.textContent = "You won! :) If you want to play again, please refresh the site";
+        showScoreHuman.textContent = `Your Score: ${scoreHuman}`;
+    };
+};
 
-// function playGame() {
-//     let scoreComputer = 0;
-//     let scoreHuman = 0;
-//     function playRound(humanChoice, computerChoice) {
-
-
-    //part to play 5 rounds, previous code is unchanged from only playing one round
-    
-    // for (let i = 0; i < 5; i++) {
-    //     const humanSelection = getHumanChoice();
-    //     const computerSelection = getComputerChoice();
-    //     playRound(humanSelection, computerSelection);
-    //     console.log(`Score of human: ${scoreHuman}; Score of computer: ${scoreComputer}`);
-    // };
-// };
-
-//playGame();

@@ -59,31 +59,39 @@ h1 {padding-bottom: 20px;}
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .scores-display {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .hlScoreHuman {
     display: flex;
-    width: 130px;
     justify-content: center;
+    width: 130px;
+    font-weight: 700;
 }
 
 .showScoreHuman {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    font-size: 60px;
 }
 
 .hlScoreComputer {
     display: flex;
     justify-content: center;
     width: 130px;
+    font-weight: 700;
 }
 
 .showScoreComputer {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    font-size: 60px;
 }

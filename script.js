@@ -115,4 +115,3 @@ function endGame() {
         showScoreHuman.textContent = scoreHuman;
     };
 };
-

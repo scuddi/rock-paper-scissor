@@ -48,8 +48,11 @@ h1 {padding-bottom: 20px;}
 }
 
 .winner {
+    display: flex;
+    justify-content: center;
     padding-bottom: 20px;
     font-weight: 700;
+    min-width: 470px;
 }
 
 .hl-scores {
@@ -60,4 +63,27 @@ h1 {padding-bottom: 20px;}
 
 .scores-display {
     display: flex;
+    justify-content: space-between;
+}
+
+.hlScoreHuman {
+    display: flex;
+    width: 130px;
+    justify-content: center;
+}
+
+.showScoreHuman {
+    display: flex;
+    justify-content: center;
+}
+
+.hlScoreComputer {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+}
+
+.showScoreComputer {
+    display: flex;
+    justify-content: center;
 }
